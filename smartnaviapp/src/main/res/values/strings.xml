@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- STANDARD ENGLISCH   -->
+
+<resources>
+    <string name="app_name">Driving Test</string>
+    <string name="tx_03">Search</string>
+    <string name="tx_04">Loading Route. Please wait&#8230;</string>
+    <string name="tx_06">SmartNavi was not able to get an initial position.\nPlease enable internet or GPS and restart SmartNavi,\nor contact our support: smartnavi@2imba.de</string>
+    <string name="tx_10">Please enter your body height, so that your step length can be determined.</string>
+
+
+    <string name="tx_12">Touch and hold the map to get extra options. So you can set your exact start position.</string>
+    <string name="tx_15">Settings</string>
+    <string name="tx_18">Long Press</string>
+
+
+    <string name="tx_24">No Result. Check internet connection and try again.</string>
+    <string name="tx_25">deactivated</string>
+    <string name="tx_30">Could not get route information. Please try again later.</string>
+
+
+    <string name="tx_32">Invalid number.</string>
+    <string name="tx_35">Cancel</string>
+    <string name="tx_36">Open Settings</string>
+    <string name="tx_38">OK</string>
+
+
+    <string name="tx_43">Unfortunately your device does not seem to have a magnetic field sensor (compass). SmartNavi can not work without that.\nMore information on our website:\nwww.smartnavi.mobi\n</string>
+    <string name="tx_44">Adjust settings:</string>
+    <string name="tx_47">Kiểm tra lại kết nốt internet của bạn.</string>
+    <string name="tx_49">Chú ý, hãy chắc rằng bạn đã bật GPS</string>
+
+
+    <string name="tx_51">Chiều cao của bạn</string>
+    <string name="tx_52">chiều dài bước chân của bạn được tính theo chiều cao của bạn</string>
+    <string name="tx_55">Vibration</string>
+    <string name="tx_56">Góc nhìn vệ tinh</string>
+    <string name="tx_57">Speech Output</string>
+    <string name="tx_58">Vibrates at next navigation step.</string>
+    <string name="tx_59">Exports the route you walk in a GPX-file on your SD-Card</string>
+
+
+    <string name="tx_65">About</string>
+
+
+    <string name="tx_71">Miscellaneous</string>
+    <string name="tx_75">Long battery life</string>
+    <string name="tx_76">Balanced</string>
+    <string name="tx_77">No results were found for your request.</string>
+    <string name="tx_80">High accuracy</string>
+
+    <string name="tx_82">Initial positioning stopped.</string>
+    <string name="tx_84">For navigation instructions</string>
+    <string name="tx_85">Cập nhật vị trí của bạn thường xuyên với GPS</string>
+    <string name="tx_88">GPX-File will be created in Folder \"smartnavi\"</string>
+
+    <string name="tx_100">SmartNavi needs permission for location services.</string>
+
+    <string name="tx_101">SmartNavi needs permission to save map data to storage.</string>
+
+    <string-array name="possetzen">
+        <item>Đặt vị trí</item>
+        <item>Đặt điểm đến</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/googlemap_actvity_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/feld"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/googlemap_fragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.ilm.sandwich.tools.MySupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/mapText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#bb272c32"
+            android:drawableTop="@drawable/back"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="0.1"
+            android:textColor="#f3f3f3"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view156"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_above="@+id/mapText"
+            android:background="#bb8dbd25" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:onClick="abortGPS"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/liste"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#CC000000"
+            android:entries="@array/possetzen"
+            android:gravity="center_horizontal"
+            android:visibility="invisible" />
+
+        <!-- LongPressDialog -->
+        <!-- LongPressDialog -->
+        <!-- LongPressDialog -->
+
+        <RelativeLayout
+            android:id="@+id/longpPressDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="120dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/longPressTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#333333">
+
+                <TextView
+                    android:id="@+id/longpPressTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="-2"
+                    android:shadowRadius="0.1"
+                    android:text="@string/tx_18"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/longPressInhalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/longPressTitleLayout"
+                android:background="#e6e6e6">
+
+                <ImageView
+                    android:id="@+id/longPressImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="LongPress"
+                    android:src="@drawable/longpress" />
+
+                <TextView
+                    android:id="@+id/longpPressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/longPressImage"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="0.1"
+                    android:text="@string/tx_12"
+                    android:textColor="#4d4d4d"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/longPressButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/longpPressText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_dark"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/tx_38"
+                    android:textColor="#F5F5F5"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/longPressLine2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/longPressButton" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/toolbar_googlemap"
+            layout="@layout/toolbar" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_anchor="@+id/googlemap_fragment"
+        app:layout_anchorGravity="bottom|right|end"
+        app:rippleColor="@android:color/holo_green_light" />
+
+</android.support.design.widget.CoordinatorLayout>
